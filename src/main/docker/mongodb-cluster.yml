@@ -1,0 +1,16 @@
+version: '2'
+services:
+    dashboard-mongodb:
+        image: mongo:3.4.10
+        ports:
+            - "27017:27017"
+        command: mongos --configdb dashboard-mongodb-config
+    dashboard-mongodb-node:
+        build:
+            context: .
+            dockerfile: mongodb/MongoDB.Dockerfile
+        command: mongod --replSet rs1 --noprealloc --smallfiles
+    dashboard-mongodb-config:
+        image: mongo:3.4.10
+        container_name: dashboard-mongodb-config
+        command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db
