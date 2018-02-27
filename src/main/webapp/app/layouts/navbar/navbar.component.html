@@ -30,9 +30,11 @@
                 </a>
                 <ul class="dropdown-menu" ngbDropdownMenu>
                     <li *ngSwitchCase="true">
-                        <a class="dropdown-item">
-                            <i class="fa fa-trello" aria-hidden="true"></i>
-                            <span>Project Management</span>
+                        <a class="nav-link" routerLink="pm" (click)="collapseNavbar()">
+                            <span class="dropdown-item">
+                                <i class="fa fa-trello" aria-hidden="true"></i>
+                                <span>Project Management</span>
+                            </span>
                         </a>
                     </li>
                 </ul>

@@ -12,9 +12,8 @@ import { DashBoardAccountModule } from './account/account.module';
 import { DashBoardEntityModule } from './entities/entity.module';
 import { customHttpProvider } from './blocks/interceptor/http.provider';
 import { PaginationConfig } from './blocks/config/uib-pagination.config';
-
+import { FeaturesModule } from './features/features.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
-
 import {
     JhiMainComponent,
     NavbarComponent,
@@ -35,6 +34,7 @@ import {
         DashBoardAccountModule,
         DashBoardEntityModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
+        FeaturesModule
     ],
     declarations: [
         JhiMainComponent,
