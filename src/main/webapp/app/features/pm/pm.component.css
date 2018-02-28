@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+  }
+
+.div1 {
+    background: #e2e4e6;
+	width: 258px;
+	padding: 6px;
+	margin: 5px;
+	display: inline-block;
+}
+
+#drag1 {
+    float:left;padding:10px;margin:10px;-moz-user-select:none;
+ }
