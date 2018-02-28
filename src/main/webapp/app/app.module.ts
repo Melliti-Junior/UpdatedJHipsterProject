@@ -34,7 +34,7 @@ import {
         DashBoardAccountModule,
         DashBoardEntityModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
-        FeaturesModule
+        FeaturesModule,
     ],
     declarations: [
         JhiMainComponent,
